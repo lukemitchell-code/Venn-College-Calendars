@@ -1,5 +1,5 @@
 {
-    "Princeton": {
+    "Princeton University": {
         "fall": {
         "start": "2025-09-02",
         "end": "2025-12-04",
