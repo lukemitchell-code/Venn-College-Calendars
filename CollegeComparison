@@ -1,0 +1,54 @@
+import csv
+
+def main():
+    # Read all values from each file
+    with open('/workspaces/Venn-College-Calendars/Brown University', 'r') as Brown:
+        valuesBrown = Brown.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/Cornell University', 'r') as Cornell:
+        valuesCornell = Cornell.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/Georgia Institute of Technology', 'r') as GeorgiaTech:
+        valuesGeorgiaTech = GeorgiaTech.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/Stanford University', 'r') as Stanford:
+        valuesStanford = Stanford.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/SUNY Canton', 'r') as Canton:
+        valuesCanton = Canton.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/Tufts University', 'r') as Tufts:
+        valuesTufts = Tufts.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/University of California-- Los Angeles', 'r') as Ucla:
+        valuesUcla = Ucla.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/University of California: San Diego', 'r') as Ucsd:
+        valuesUcsd = Ucsd.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/University of Florida', 'r') as Florida:
+        valuesFlorida = Florida.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/University of Illinois Ubrana-Champaign', 'r') as Uiuc:
+        valuesUiuc = Uiuc.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/University of Michigan', 'r') as Michigan:
+        valuesMichigan = Michigan.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/University of Virginia', 'r') as Virginia:
+        valuesVirginia = Virginia.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/Villanova University', 'r') as Villanova:
+        valuesVillanova = Villanova.read().split()
+
+    with open('/workspaces/Venn-College-Calendars/Washington University in St. Louis', 'r') as WashU:
+        valuesWashU = WashU.read().split()
+
+    # Compare every value from file1 to every value from file2
+    for val1 in valuesBrown:
+        for val2 in valuesCornell:
+            for val3 in valuesVirginia:
+                if val1 == val2 == val3:
+                    print(f"{val1} is shared")
+
+main()
